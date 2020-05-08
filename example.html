@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Basic presentation template</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Chris Hanretty" />
+    <link href="example_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="rhul.css" type="text/css" />
+    <link rel="stylesheet" href="rhul-fonts.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Basic presentation template
+### Chris Hanretty
+### A date here
+
+---
+
+
+
+
+
+# A basic slide
+
+- This is a series of list items
+- The list is presented without content
+- and void...
+- Note how the bullet point is styled in RHUL orange
+- You can style text using class `brick-orange`, like I've done for .brick-orange[this text]
+- Body text is set in a very dark grey.
+
+---
+
+# Numbered lists
+
+1. This is an ordered list.
+2. You can see how the list numerals are styled.
+3. There's not much more to it than that.
+
+---
+
+# Complex lists
+
+ - This list contains lists
+     * I always struggle with how these lists are handled in Markdown
+     * Maybe you will have better luck than me
+ - This list item has as a descendant an ordered list.
+     1. Here's list item number one
+	 2. And two, and so on...
+	 3. Until we reach a nice stopping point
+ - That was fun, wasn't it?
+ 
+ 
+---
+
+# Slide class options
+
+ - There are two slide classes you may want to use.
+ - One is class `inverse`, which has a nice `rhul-blue` background (`#334150`).
+ - The other is `section-slide`, which has the same background, but uses a vertical strip and background like `title-slide`
+
+---
+
+class: inverse
+
+# A slide with class inverse
+
+This slide illustrates the inverse class.
+
+It has text in a range of formats.
+
+*Here is text between single asterisks*.
+
+**Here is text between double asterisks**.
+
+The `brick-orange` colour, which is used for text set in `&lt;em&gt;` and
+`&lt;strong&gt;` (markdown's single and double asterisks) works well when
+set on this background.
+
+---
+
+class: section-slide
+
+# A slide with class section-slide
+
+---
+
+class: section-slide
+
+# A slide with class section-slide and an extra-long section title which looks ugly
+
+---
+
+# A slide with a block quote
+
+There are two more design elements, for block-quotes and warnings
+
+&gt; "Here's the block quote. What do you think of it?"
+
+Here we see some text set in the `alert` class:
+
+.alert[You should always use 4:3 ratio for presentations]
+
+---
+
+# Font choices
+
+ - Royal Holloway's preferred font is Ideal Sans, which works really
+   well at light weights and as body text.
+ - The fall-back font is Corbel, which is common on systems with
+   Microsoft Office.
+ - Accordingly, the basic font is Corbel, with the system default
+   sans-serif as a backup.
+ - The heading font, however, is Raleway, which just works really well
+   in light weights.
+ - Pre-formatted text is set in `Source Code Pro (2019)`.
+ 
+---
+
+# This page has pulls
+
+.pull-left[
+this section is in pull-left. It's a copy of the default one.
+]
+.pull-right[
+This bit is in pull-right. It doesn't have a border.
+]
+
+---
+
+class: animated, fadeIn
+
+# This page has columns
+
+.left-column[
+This is a left column.  It's narrow.
+]
+.right-column[
+This text isn't in a class of its own.
+]
+
+---
+
+class: animated, fadeIn
+
+# This page has *emphasis* and **bold text**
+
+This text is set in *italics*.
+
+---
+
+class: animated, fadeIn
+
+# Here's a slide that moves in
+
+I've set this using the `animated` and `fadeIn` classes.
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
