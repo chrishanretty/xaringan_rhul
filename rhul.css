@@ -1,0 +1,175 @@
+.inverse, .title-slide {
+  background-color: #334150;
+  color: #ffffff;
+  text-shadow: 0 0 0px #333;
+}
+.inverse em {
+    color: #EB641E;
+}
+
+.title-slide {
+    background-color: #334150;
+    background-image: url(https://intranet.royalholloway.ac.uk/staff/assets/img/brand-toolkit/logo-small-london-cmyk.jpg), url(vertical_strip.png);
+    background-position: 100% 94%, 0% 0%;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 7vw 3.5vw, 11px 100%;
+
+
+}
+.section-slide {
+    background-color: #334150;
+    background-image: url(https://intranet.royalholloway.ac.uk/staff/assets/img/brand-toolkit/logo-small-london-cmyk.jpg), url(vertical_strip.png);
+    background-position: 100% 94%, 0% 0%;
+    background-repeat: no-repeat, repeat-x;
+    background-size: 7vw 3.5vw, 11px 100%;
+}
+.title-slide .remark-slide-number {
+  display: none;
+}
+.section-slide .remark-slide-number {
+  display: none;
+}
+.title-slide h1 {
+    position: absolute;
+    top: 12.5%;
+    left: 8.6%;
+    text-align: left;
+    font-weight: 200;
+}
+
+.section-slide h1 {
+    position: absolute;
+    top: 62.5%;
+    left: 8.6%;
+    text-align: left;
+    font-weight: 200;
+    color: white;
+}
+
+.title-slide h3 {
+    position: absolute;
+    top: 83%;
+    left: 8.6%;
+    text-align: left;
+    color: #fff;
+    font-weight: 300;
+    font-size: 2vh;
+}
+.title-slide h3 + h3 {
+    position: absolute;
+    top: 87%;
+    left: 8.6%;
+    color: #fff;
+    text-align: left;
+    font-size: 2vh;
+}
+
+
+body {
+    font-size: 1pc;
+    line-height: 1.42857;
+    color: #333; /* this is from the website CSS */
+}
+
+h1 {
+    font-weight: 300;
+}
+
+strong {
+    color: #EB641E;
+}
+ul {list-style: none}
+ul li:before {
+    content: "•"; color: #EB641E;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+ol {
+	counter-reset:awesome-count; /* Initiate a counter */
+	margin-left:0; /* Remove the default left margin */
+	padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+	position:relative; /* Create a positioning context */
+	margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+	padding:4px 8px; /* Add some spacing around the content */
+	list-style:none; /* Disable the normal item numbering */
+
+}
+ol > li:before {
+	content:counter(awesome-count); /* Use the counter as content */
+	counter-increment:awesome-count; /* Increment the counter by 1 */
+	/* Position and style the number */
+	position:absolute;
+	top:-2px;
+	left:-2em;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	width:2em;
+	/* Some space between the number and the content in browsers that support
+	   generated content but not positioning it (Camino 2 is one example) */
+	margin-right:8px;
+	padding:4px;
+	color:#fff;
+	background:#EB641E;
+	font-weight:bold;
+	text-align:center;
+}
+
+.large {
+    font-size: 150%;
+}
+.huge {
+    font-size: 200%;
+}
+
+.pull-left {
+  float: left;
+  width: 47%;
+  padding-right: 1%;
+  border-right: 2px solid #666;
+}
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+  border-right: 2px solid #666;
+}
+
+blockquote::before {
+    content: "👁";
+    font-size: 1.5pc;
+    text-align: center;
+    color: #fff;
+    background-color: #00b3b0;
+/*    border: 1px solid black; */
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: -1em;
+}
+blockquote {
+    border: 2px solid #00b3b0;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-left: 1.2em;
+    padding-top: -1em;
+}
+blockquote p {
+    margin-top: -1.5em;
+    margin-left: 1.5em;
+    font-weight: bold;
+}
+
+.brick-orange {
+    color: #EB641E
+}
+.alert {
+    background-color: #D72D2D;
+    color: white;
+    letter-spacing: .033em;
+}

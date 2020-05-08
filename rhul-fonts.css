@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,400);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans)
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro)
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300)
+@font-face {
+    font-family: ideal-sans-light;
+    src: url(https://intranet.royalholloway.ac.uk/staff/assets/fonts/IdealSans-Light-Pro.otf) format("opentype"), url(https://intranet.royalholloway.ac.uk/staff/assets/fonts/IdealSans-Light-Pro.ttf) format("truetype"), url(https://intranet.royalholloway.ac.uk/staff/assets/fonts/IdealSans-Light-Pro.woff) format("woff");
+    font-style: normal;
+    font-weight: 400
+}
+
+body {
+    font-family: ideal-sans-light, Corbel, sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway, Corbel, sans-serif;
+}
+.ideal {
+    font-family: ideal-sans-light;
+}
+.corbel {
+    font-family: Corbel;
+}
+.raleway {
+    font-family: Raleway;
+}
+.robot {
+    font-family: Roboto;
+}
+.opensans {
+    font-family: "Open Sans";
+}
+.worksans {
+    font-family: "Work Sans";
+}
+pre, tt, code {
+    font-family: "Source Code Pro";
+    font-size: 90%;
+}
