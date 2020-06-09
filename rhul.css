@@ -140,6 +140,18 @@ ol > li:before {
   border-right: 2px solid #666;
 }
 
+.pull-right {
+  float: right;
+  width: 47%;
+  padding-left: 1%;
+}
+.right-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: right;
+}
+
 blockquote::before {
     content: "👁";
     font-size: 1.5pc;
@@ -164,6 +176,15 @@ blockquote p {
     margin-left: 1.5em;
     font-weight: bold;
 }
+
+.left-column blockquote, .right-column blockquote, .pull-left blockquote, .pull-right blockquote {
+    border: 2px solid #00b3b0;
+    margin-left: .5em;
+    margin-right: .5em;
+    padding-left: 1.2em;
+    padding-top: -1em;
+}
+
 
 .brick-orange {
     color: #EB641E
